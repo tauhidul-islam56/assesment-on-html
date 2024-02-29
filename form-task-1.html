@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task 1</title>
+</head>
+
+<body>
+    <h1>Traveling Vacation Packages</h1>
+    <form action="#">
+        <fieldset>
+            <fieldset>
+                <legend><strong>Travel Information:</strong></legend>
+                <div>
+                    <label for="destination">Destination</label>
+                    <select name="destination" id="destination" required>
+                        <option value="">Select a Destination</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="india">India</option>
+                        <option value="australia">Australia</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Travel Date :</label>
+                    <label for="arrival">Arrival</label>
+                    <input type="date" name="arrival" id="arrival" required>
+                    <label for="departure"> Departure</label>
+                    <input type="date" name="departure" id="departure" required>
+                </div>
+                <div>
+                    <label for="duration">Travel Duration</label>
+                    <select name="duration" id="duration" required>
+                        <option value="">Select a Duration</option>
+                        <option value="bangladesh">3 Days</option>
+                        <option value="india">1 Week</option>
+                        <option value="australia">15 Days</option>
+                        <option value="singapore">1 Month</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="group-size">Group Size</label>
+                    <input type="number" name="group-size" id="group-size" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Accommodation Preferences:</strong></legend>
+                <div>
+                    <label>Hotel Star Rating :</label>
+                    <input type="radio" name="rating" id="1-star">
+                    <label for="1-star">1 Star</label>
+                    <input type="radio" name="rating" id="2-star">
+                    <label for="2-star">2 Star</label>
+                    <input type="radio" name="rating" id="3-star">
+                    <label for="3-star">3 Star</label>
+                    <input type="radio" name="rating" id="4-star">
+                    <label for="4-star">4 Star</label>
+                    <input type="radio" name="rating" id="5-star">
+                    <label for="5-star">5 Star</label>
+                </div>
+                <div>
+                    <label for="room-type">Room Type</label>
+                    <select name="room-type" id="room-type" required>
+                        <option value="">Select Room Type</option>
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="family">Family</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Amenities :</label>
+                    <input type="checkbox" name="pool" id="pool">
+                    <label for="pool">Pool</label>
+                    <input type="checkbox" name="spa" id="spa">
+                    <label for="spa">Spa</label>
+                    <input type="checkbox" name="gym" id="gym">
+                    <label for="gym">Gym</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Activity Preferences:</strong></legend>
+                <div>
+                    <label>Activity Types :</label>
+                    <input type="checkbox" name="sightseeing" id="sightseeing">
+                    <label for="sightseeing">Sightseeing</label>
+                    <input type="checkbox" name="adventure" id="adventure">
+                    <label for="adventure">Adventure</label>
+                    <input type="checkbox" name="relaxation" id="relaxation">
+                    <label for="relaxation">Relaxation</label>
+                </div>
+                <div>
+                    <label for="specific-activities">Specific Activities</label>
+                    <select name="specific-activities" id="specific-activities" required>
+                        <option value="">Select an option</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="budget">Budget per activity</label>
+                    <input type="number" name="budget" id="budget" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Additional Information:</strong></legend>
+                <div>
+                    <label for="dietary">Dietary Restrictions</label>
+                    <input type="text" name="dietary" id="dietary">
+                </div>
+                <div>
+                    <label for="requests">Special Requests</label>
+                    <input type="text" name="requests" id="requests">
+                </div>
+                <div>
+                    <label><strong>Contract Information :</strong></label>
+                </div>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+                <div>
+                    <p>Message</p>
+                    <textarea name="message" id="message" cols="30" rows="8"></textarea>
+                </div>
+            </fieldset>
+            <div>
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+            <div>
+                <button type="button">Save Draft</button>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

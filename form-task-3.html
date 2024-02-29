@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task 3</title>
+</head>
+<body>
+    <h1>Local Animal Shelter</h1>
+    <fieldset>
+        <fieldset>
+            <legend><strong>Adopter Information:</strong></legend>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label><strong>Household Information :</strong></label>
+            </div>
+            <div>
+                <label>Number of People :</label>
+                <input type="radio" name="radiotype" id="one">
+                <label for="one">1</label>
+                <input type="radio" name="radiotype" id="two">
+                <label for="two">2</label>
+                <input type="radio" name="radiotype" id="three">
+                <label for="three">3</label>
+                <input type="radio" name="radiotype" id="four">
+                <label for="four">4</label>
+                <input type="radio" name="radiotype" id="five">
+                <label for="five">5</label>
+                <input type="radio" name="radiotype" id="six">
+                <label for="six">6</label>
+            </div>
+            <div>
+                <label>Number of Pets :</label>
+                <input type="radio" name="pets" id="pet-one">
+                <label for="pet-one">1</label>
+                <input type="radio" name="pets" id="pet-two">
+                <label for="pet-two">2</label>
+                <input type="radio" name="pets" id="pet-three">
+                <label for="pet-three">3</label>
+            </div>
+            <div>
+                <label>Lifestyle Information :</label>
+                <input type="radio" name="lifestyle" id="lifestyle">
+                <label for="active">Active</label>
+                <input type="radio" name="lifestyle" id="quiet">
+                <label for="quiet">Quiet</label>
+            </div>
+            <div>
+                <p>Experience with owning pets (optional)</p>
+                <textarea name="experience" id="experience" cols="30" rows="8"></textarea>
+            </div>
+            <div>
+                <p>References (optional)</p>
+                <textarea name="references" id="references" cols="30" rows="8"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Animal preferences:</strong></legend>
+            <div>
+                <label>Species</label>
+                <select name="species" id="species">
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select>
+            </div>
+            <div>
+                <label>Age range</label>
+                <input type="radio" name="puppy" id="puppy">
+                <label for="puppy">Puppy</label>
+                <input type="radio" name="puppy" id="kitten">
+                <label for="kitten">Kitten</label>
+                <input type="radio" name="puppy" id="adult">
+                <label for="adult">Adult</label>
+            </div>
+            <div>
+                <label>Size preferences</label>
+                <input type="radio" name="small" id="small">
+                <label for="small">Small</label>
+                <input type="radio" name="small" id="medium">
+                <label for="medium">Medium</label>
+                <input type="radio" name="small" id="large">
+                <label for="large">Large</label>
+            </div>
+            <div>
+                <label>Energy level preferences</label>
+                <input type="radio" name="energy" id="active">
+                <label for="active">Active</label>
+                <input type="radio" name="energy" id="low">
+                <label for="low">Low</label>
+            </div>
+            <div>
+                <label for="breed">Specific breed preferences (optional)</label>
+                <input type="search" name="breed" id="breed" placeholder="search">
+            </div>
+            <div>
+                <label>Specific needs considerations</label>
+                <input type="checkbox" name="needs" id="needs">
+                <label for="needs">Allergies</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Additional Information:</strong></legend>
+            <div>
+                <label for="visit-date">Availability for home visits</label>
+                <input type="date" name="visit-date" id="visit-date">
+            </div>
+            <div>
+                <p>Reason for adopting</p>
+                <textarea name="reason" id="reason" cols="30" rows="8"></textarea>
+            </div>
+            <div>
+                <p>Question for the shelter staff</p>
+                <textarea name="staff" id="staff" cols="30" rows="8"></textarea>
+            </div>
+        </fieldset>
+        <div>
+            <label for="renge">Form completion</label>
+            <input type="range" name="renge" id="renge">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </fieldset>
+</body>
+</html>
